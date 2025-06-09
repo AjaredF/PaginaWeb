@@ -1,0 +1,84 @@
+/* Estilo general del cuerpo de la página */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f0f4f8; /* Color de fondo */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Encabezado, no me gustó */
+/* header {
+    background-color: #1db954;
+    color: white;
+    padding: 1rem;
+}
+*/
+
+header {
+    position: fixed; /* fijo para que se vea cute */
+    top: 0;
+    left: 0;
+    width: 100%; /* Que ocupe todo el ancho de la pantalla */
+    background-color: #1db954;
+    color: white;
+    padding: .5rem;
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    font: bold
+}
+
+
+/* Main intainer, poner el padding más abajo porque el header está fijo o fixed */
+main {
+    padding: 6rem;
+}
+
+/* Estilo de cada sección de canción */
+.cancion {
+    background-color: white;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra suave */
+    margin: 1rem auto;
+    padding: 2rem;
+    max-width: 400px; /* Ancho máximo para que se vea bien en móviles */
+}
+
+/* Imagen */
+.cancion img {
+    width: 100%; /* Ancho completo del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 10px;
+}
+
+/* Título de la canción */
+.cancion h2 {
+    margin: 0.5rem 0;
+}
+
+/* Enlace a Spotify */
+.cancion a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: #1db954;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Botón de volver */
+button {
+    margin-top: 2rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #1db954;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Pie de página */
+footer {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #555;
+}
